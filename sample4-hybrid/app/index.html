@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+
+    <base href="/" />
+    <meta name="fragment" content="!">
+    <meta charset="utf-8">
+
+    <title> Hybrid App </title>
+
+</head>
+
+<body>
+    <nav>
+        navigation
+    </nav>
+
+    <section ng-view autoscroll="true"></section>
+
+    <footer>
+        footer
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>    
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="home/home.route.js"></script>
+    <script src="about/about.route.js"></script>
+    <script src="home/home.controller.js"></script>
+    <script src="about/about.controller.js"></script>
+    <script src="app.run.js"></script>
+
+</body>
+
+</html>
