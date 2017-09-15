@@ -3,7 +3,7 @@ layout:  Post
 title:  A gentle intro to Express with 4 real world applications
 description:  Building 4 sample applications from scratch using Node.js and Express and comparing them regarding their specific use case.
 date:  2017-09-16
-thumbnail: https://johncmckim.me/static/external/2016-10-Serverless-Blog/happy-plants-thumb.jpg
+thumbnail: https://raw.githubusercontent.com/adnanrahic/cdn/master/a-gentle-intro-to-express/coffee-1030971_1280.jpg
 authors:
  - AdnanRahic
 ---
@@ -106,7 +106,7 @@ Your final folder structure of the sample app should look something like this.
 - package-lock.json // this file will be present only if you have NPM version 5 or above.
 - server.js 
 ```
-Take a look at the [repo]() to catch up if you missed some of the steps.
+Take a look at the [repo](https://github.com/adnanrahic/a-gentle-intro-to-express/tree/master/sample1-server-rendered) to catch up if you missed some of the steps.
 
 Phew, finally we can run the app to see what it looks like. Jump back to your terminal and run:
 ```
@@ -115,7 +115,7 @@ node server.js
 
 You should see ```Express server listening on port 3030``` get logged back to your terminal. Check your browser, you'll see the rendered view.
 
-![sample1 browser image]()
+![sample1 browser image](https://raw.githubusercontent.com/adnanrahic/cdn/master/a-gentle-intro-to-express/Screenshot%20from%202017-09-15%2022-50-56.png)
 
 ### REST APIs
 Ready to get your world turned upside down? Welcome to REST APIs. The acronym stands for **R**epresentative **S**tate **T**ransfer. But you will never need to remember that. What's important though is to understand the logic behind how REST works and why it is the preferred type of data delivery. The core lies in creating an API, an **A**pplication **P**rogram **I**nterface, to send and receive data in JSON format. REST APIs are used to interact with databases to store data in a persistent manner.
@@ -174,11 +174,11 @@ node server.js
 
 Start off by sending a GET request to http://localhost:4040/.
 
-![get request]()
+![get request](https://raw.githubusercontent.com/adnanrahic/cdn/master/a-gentle-intro-to-express/Screenshot%20from%202017-09-15%2016-43-50.png)
 
 Now send a POST request to the same url.
 
-![post request]()
+![post request](https://raw.githubusercontent.com/adnanrahic/cdn/master/a-gentle-intro-to-express/Screenshot%20from%202017-09-15%2016-44-02.png)
 
 Enter some JSON data into the body of the request and hit send. All the data you send to the endpoint gets sent back to you as the response.
 
@@ -186,7 +186,7 @@ Switch back to the code and let's explain what's going on. We first assign the v
 
 Requests like these which are used solely as means of transferring data to and from a server are used to store data in persistent storage such as databases. This is what REST APIs are awesome at. In today's world they thrive because they work in unison with both mobile and web applications as their data storage.
 
-If you missed any steps, you can check out the code [here]().
+If you missed any steps, you can check out the code [here](https://github.com/adnanrahic/a-gentle-intro-to-express/tree/master/sample2-rest-api).
 
 ### Static Websites
 What if we don't need any cool template rendering, nor interaction with a database? What if we just want a cool landing page or an awesome proof of concept page?
@@ -240,13 +240,13 @@ Create an html folder and add two files named **index.html** and **about.html**.
 
 That's all. Go ahead, spin up the server and open up a browser. 
 
-![show index html]()
+![show index html](https://raw.githubusercontent.com/adnanrahic/cdn/master/a-gentle-intro-to-express/Screenshot%20from%202017-09-15%2022-51-39.png)
 
 You can see by requesting the ```'/'``` route the **index.html** has been loaded by default. You can switch to ```'/about.html'``` and the about page will be loaded. This principle works with any type of file. You can add an image to this folder as well. It will be displayed the same way if you navigated to it though the url.
 
-![show about html]() 
+![show about html](https://raw.githubusercontent.com/adnanrahic/cdn/master/a-gentle-intro-to-express/Screenshot%20from%202017-09-15%2022-51-45.png) 
 
-If you missed any steps, take a break and check out the code [here]().
+If you missed any steps, take a break and check out the code [here](https://github.com/adnanrahic/a-gentle-intro-to-express/tree/master/sample3-static).
 
 ### Hybrid apps
 No we're not going to go talk about the Toyota Prius. This is another type of hybrid. Let's say, you want the versatility, power, and ease of use of a REST API, but also the speed of a **S**ingle **P**age **A**pplication.
@@ -316,7 +316,7 @@ This structure seems familiar now doesn't it. We've combined the REST API with t
 
 Now when we want to retrieve some data from the API we can simply hit the ```'/api'``` route and get JSON data back. Otherwise the app will always serve the main html file located in the app folder. 
 
-Not to go into more detail, the you can check out the full example using Angular.js over [here]().
+Not to go into more detail, the you can check out the full example using Angular.js over [here](https://github.com/adnanrahic/a-gentle-intro-to-express/tree/master/sample4-hybrid).
 
 ## When to use what?
 No application type is the best in every scenario. They all have their place in the programming world. It all depends on your use case and what you want to build. 
