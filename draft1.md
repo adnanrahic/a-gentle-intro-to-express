@@ -174,11 +174,11 @@ node server.js
 
 Start off by sending a GET request to http://localhost:4040/.
 
-![get request](https://raw.githubusercontent.com/adnanrahic/cdn/master/a-gentle-intro-to-express/Screenshot%20from%202017-09-15%2016-43-50.png)
+![get request](https://raw.githubusercontent.com/adnanrahic/cdn/master/a-gentle-intro-to-express/Screenshot%20from%202017-09-15%2016-44-02.png)
 
 Now send a POST request to the same url.
 
-![post request](https://raw.githubusercontent.com/adnanrahic/cdn/master/a-gentle-intro-to-express/Screenshot%20from%202017-09-15%2016-44-02.png)
+![post request](https://raw.githubusercontent.com/adnanrahic/cdn/master/a-gentle-intro-to-express/Screenshot%20from%202017-09-15%2016-43-50.png)
 
 Enter some JSON data into the body of the request and hit send. All the data you send to the endpoint gets sent back to you as the response.
 
